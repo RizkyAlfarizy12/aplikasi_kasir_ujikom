@@ -1,77 +1,33 @@
-# Aplikasi Kasir - Uji Kompetensi
+# Aplikasi Kasir (aplikasi_kasir_ujikom)
 
-![Aplikasi Kasir](https://img.shields.io/badge/Aplikasi-Kasir-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
+Aplikasi Kasir sederhana ini dirancang untuk membantu toko kecil atau usaha menengah dalam mempermudah pencatatan transaksi penjualan. Dibuat menggunakan PHP murni (tanpa Laravel) dan MySQL, aplikasi ini dapat menangani berbagai transaksi dengan fitur seperti pencatatan barang, manajemen stok, dan laporan penjualan.
 
-Aplikasi Kasir **Uji Kompetensi** ini dibuat untuk mempermudah pengelolaan transaksi penjualan, stok barang, serta laporan transaksi. Aplikasi ini cocok digunakan oleh usaha kecil dan menengah (UKM) yang membutuhkan solusi sederhana namun efektif untuk pengelolaan kasir dan inventori.
+## Fitur Aplikasi
 
-## Fitur Utama
-
-- **Pengelolaan Barang**: Tambah, edit, dan hapus data barang dengan mudah.
-- **Transaksi Penjualan**: Mencatat transaksi dengan rincian barang, harga, dan jumlah yang dibeli.
-- **Laporan Transaksi**: Menampilkan laporan penjualan harian, bulanan, dan tahunan.
-- **Stok Barang**: Pantau stok barang dan dapatkan notifikasi saat stok menipis.
-- **User-Friendly**: Tampilan antarmuka yang sederhana dan mudah digunakan.
-- **Multi-User**: Mendukung beberapa pengguna dengan hak akses berbeda (kasir dan admin).
-
-## Instalasi
-
-1. **Clone repository**:
-
-    ```bash
-    git clone https://github.com/RizkyAlfarizy12/aplikasi_kasir_ujikom.git
-    ```
-
-2. **Masuk ke direktori aplikasi**:
-
-    ```bash
-    cd aplikasi_kasir_ujikom
-    ```
-
-3. **Instal dependencies** (jika ada):
-
-    ```bash
-    composer install  # atau npm install, sesuai teknologi yang digunakan
-    ```
-
-4. **Konfigurasi database**:
-
-   Pastikan Anda telah membuat database, lalu sesuaikan pengaturan database pada file `.env`.
-
-    ```bash
-    DB_DATABASE=nama_database
-    DB_USERNAME=username_database
-    DB_PASSWORD=password_database
-    ```
-
-5. **Migrasi dan Seed Database**:
-
-    ```bash
-    php artisan migrate --seed
-    ```
-
-6. **Jalankan aplikasi**:
-
-    ```bash
-    php artisan serve
-    ```
-
-7. Buka browser dan akses aplikasi di `http://localhost:8000`.
+- **Manajemen Produk:** Tambah, edit, hapus produk beserta informasi harga dan stok.
+- **Transaksi Penjualan:** Input barang yang dibeli, hitung total harga, dan cetak struk.
+- **Laporan Penjualan:** Lihat laporan penjualan harian, mingguan, atau bulanan.
+- **Pengelolaan Stok:** Memperbarui stok produk setelah transaksi penjualan.
+- **Login & Hak Akses Pengguna:** Admin dapat mengelola pengguna dan hak akses (kasir dan admin).
 
 ## Teknologi yang Digunakan
 
-- **Backend**: Laravel / CodeIgniter (sesuaikan dengan framework yang Anda gunakan)
-- **Frontend**: HTML, CSS, JavaScript (Vue.js/React.js jika digunakan)
-- **Database**: MySQL / PostgreSQL
+- **Bahasa Pemrograman:** PHP
+- **Basis Data:** MySQL
+- **Tampilan:** HTML, CSS, JavaScript (dengan Bootstrap)
+- **Server:** Apache (menggunakan XAMPP, WAMP, atau LAMP)
 
-## Struktur Proyek
+## Cara Instalasi
+
+### 1. Persiapan Lingkungan
+
+Pastikan Anda sudah menginstal software berikut di sistem Anda:
+- [XAMPP](https://www.apachefriends.org/index.html) atau software serupa seperti WAMP/LAMP untuk menjalankan server Apache dan MySQL.
+- Editor teks seperti [VSCode](https://code.visualstudio.com/) atau [Sublime Text](https://www.sublimetext.com/).
+
+### 2. Clone Repository
+
+Clone repository ini ke direktori lokal Anda menggunakan perintah Git:
 
 ```bash
-.
-├── app/                   # File backend aplikasi
-├── public/                # Folder publik untuk frontend
-├── resources/             # View dan assets (CSS, JS)
-├── routes/                # Definisi rute aplikasi
-├── .env.example           # Contoh konfigurasi environment
-├── composer.json          # File composer untuk PHP dependencies
-└── README.md              # Dokumentasi proyek ini
+git clone https://github.com/RizkyAlfarizy12/aplikasi_kasir_ujikom.git
