@@ -1,0 +1,154 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+html, body{
+	height: 100%;
+	font: 14px "Tahoma";
+}
+.atas{
+	width: 100%;
+	background: linear-gradient(#000099,blue);
+	color: white;
+	overflow: hidden;
+	border-bottom: 4px orange solid;
+	position: fixed;
+	box-shadow: 0 0 10px 0 #333;
+}
+.atas-konten{
+	width: 1000px;
+	margin: 0px auto;
+}
+.tengah{
+	width: 980px;
+	padding: 100px 20px 70px 20px;
+	overflow: hidden;
+	margin: 0px auto;
+}
+.bawah{
+	width: 100%;
+	background: linear-gradient(blue,#000099);
+	color: white;
+	text-align: center;
+	padding: 15px 0;
+	position: fixed;
+	bottom: 0;
+	border-top: 3px orange solid;
+	font: 12px "Tahoma";
+	box-shadow: 0 0 10px 0 #333;
+}
+.atas-kiri{
+	width: 260px;
+	padding: 20px;
+	float: left;
+}
+.atas-kanan{
+	width: 650px;
+	padding: 30px 20px;
+	float: right;
+	text-align: right;
+}
+.atas-kanan a{
+	padding: 7px 15px;
+	margin: 3px;
+	/*border: 2px white solid;*/
+	color: white;
+	border-radius: 10px 0 10px 0;
+	font: 12px "Tahoma";
+	font-weight: bold;
+	text-decoration: none;
+	box-shadow: 0 0 2px 2px white;
+}
+.atas-kiri big{
+	font: 24px "Tahoma";
+	font-weight: bold;
+}
+.atas-kiri small{
+	font: 24px "Brush Script MT";
+	color : gold;
+}
+.atas-kanan a:hover{
+	background: linear-gradient(gold,orange);
+	color: blue;
+	box-shadow: 0 0 2px 2px gold;
+}
+.window{
+	width: 400px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	padding: 20px;
+	margin: 0 auto;
+	top: 50%;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+.login{
+	width: 300px;
+	overflow: hidden;
+	box-shadow: 0 0 10px 0 #333;
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	/*background: white;*/
+	margin: 0px auto;
+	background: rgba(255,255,255,.8);
+}
+.login h1{
+	color: #666;
+	margin: 10px 0;
+}
+.login input[type="text"], .login input[type="password"]{
+	padding: 10px;
+	width: 260px;
+	text-align: center;
+	margin: 5px 0;
+	outline: none;
+}
+.login input[type="submit"]{
+	padding: 12px;
+	width: 285px;
+	text-align: center;
+	background: blue;
+	color: white;
+	border: none;
+	margin: 5px 0 20px 0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.login input[type="submit"]:hover{
+	background: linear-gradient(gold,orange);
+}
+.login input[type="checkbox"]{
+	transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    margin: 10px 5px 5px 0;
+}
+.window small{
+	font: 11px "Tahoma";
+	color: #fff;
+	text-shadow: 0 0 2px #000;
+}
+.window a{
+	font: 12px "Tahoma";
+	font-weight: bold;
+	color: gold;
+	text-decoration: none;
+}
+.redup{
+	background: rgba(0,0,0,.5);
+}
+.backimg{
+	background-image: url('gambar.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p{
+	margin: 15px 0;
+	text-align: justify;
+	line-height:1.5;
+}
+

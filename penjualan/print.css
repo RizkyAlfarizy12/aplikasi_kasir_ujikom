@@ -1,0 +1,95 @@
+@page { 
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 10px;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0; /* Untuk pratinjau layar */
+}
+
+td { 
+  font-size: 10px;
+}
+
+/* Sheet atau Struk */
+.sheet {
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  page-break-after: always;
+}
+
+/* Ukuran Struk */
+body.struk .sheet {
+  width: 58mm;
+  padding: 2mm;
+}
+
+/* Text Alignment */
+.txt-left { 
+  text-align: left;
+}
+.txt-center { 
+  text-align: center;
+}
+.txt-right { 
+  text-align: right;
+}
+
+/* Untuk pratinjau di layar */
+@media screen {
+  body {
+      background: #e0e0e0;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .sheet {
+      background: white;
+      box-shadow: 0 .5mm 2mm rgba(0,0,0,.3);
+      margin: 5mm auto;
+  }
+}
+
+/* Fix for Chrome issue #273306 */
+/* Untuk tampilan cetak */
+@media print {
+  body {
+      font-family: monospace;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  body.struk {
+      width: 58mm;
+      text-align: left;
+      margin: auto;
+  }
+
+  body.struk .sheet {
+      padding: 2mm;
+  }
+
+  .txt-left { 
+      text-align: left;
+  }
+  .txt-center { 
+      text-align: center;
+  }
+  .txt-right { 
+      text-align: right;
+  }
+}

